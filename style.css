@@ -1,0 +1,144 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  background: orange;
+}
+
+.blink {
+  animation: blink-animation 4s ease-in-out infinite;
+}
+
+@keyframes blink-animation {
+  25% { color: Chocolate; }
+  50% { color: SkyBlue; }
+  75% { color: Moccasin; }
+  100% { color: DarkGrey; }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+  height: 120px;
+}
+
+#titulo {
+  font-size: 50px;
+  color: red;
+  font-style: bold;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-stroke: 0.9px black;
+}
+
+#lista1{
+  font-size: 30px;
+  color:red;
+  margin: 0 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#nav {
+  display: flex;
+  gap: 40px;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.texto {
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  transform: translate(4%, -400%);
+  color: #fff;
+  padding: 45px;
+  border-radius: 20px;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.all-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  max-width: 340px;
+  height: 630px;
+  text-align: center;
+  margin: 0px 30px 0px 30px;
+}
+
+.box > img {
+  max-width: 340px;
+  height: auto;
+  border: 10px solid;
+  animation: blink-animation 4s ease-in-out infinite;
+}
+
+#indie {
+  height: 225px;
+}
+
+.texto-footer {
+  display: flex;
+  justify-content: center;
+  margin: 0px 50px 50px 50px;
+  background-color: aquamarine;
+  padding: 40px;
+  border: 10px solid;
+  text-align: center;
+  animation: blink-animation 4s ease-in-out infinite;
+  font-size: 20px;
+  font-style: bold;
+  color: white;
+  text-shadow: #DA70D6;
+}
+
+@media only screen and (max-width: 950px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: max-content;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .texto {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #titulo {
+    display: none;
+  }
+
+  #lista1{
+    font-size: 15px;
+    color:red;
+    margin: 0 8px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}

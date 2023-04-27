@@ -1,0 +1,135 @@
+body{
+    background: orange;
+}
+#nav {
+  display: flex;  
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 30px;
+  padding: 15px 0;
+
+}
+
+#lista1:hover{
+  animation: blink-animation 1s ease-in-out infinite;
+}
+
+.blink {
+  animation: blink-animation 4s ease-in-out infinite;
+}
+
+@keyframes blink-animation {
+  25% { color: Chocolate; }
+  50% { color: SkyBlue; }
+  75% { color: Moccasin; }
+  100% { color: DarkGrey; }
+}
+
+.container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container .texto {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    color: #fff;
+    padding: 45px;
+    border-radius: 20px;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+#titulo{
+    font-size: 50px;
+    color: red;
+    font-style: bold;
+    font-weight: bold;
+    -webkit-text-stroke: 0.9px black;
+    
+}
+
+#lista1{
+    font-size: 30px;
+    color:red;
+    margin: 0 15px;
+    text-decoration: none;
+    
+}
+
+
+.imagem-container {
+ display: flex;
+ align-items: center;
+ padding: 15px;
+ 
+}
+
+.imagem-container img {
+  width: 100%;
+  height: 210px;
+  border: 10px solid;
+  animation: blink-animation 4s ease-in-out infinite;
+  margin: 10px;
+}
+
+.all-box{
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: top;
+  gap: 5%;
+}
+
+.box{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  text-align:left;
+  
+}
+
+#tituloimagem{
+  align-items: top;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.box-footer{
+  display: flex;
+  align-items: center;
+  padding: 70px;
+  justify-content: center;
+}
+
+.texto-footer{
+  background-color: aquamarine;
+  padding: 40px;
+  border: 10px solid;
+  animation: blink-animation 4s ease-in-out infinite;
+
+}
+
+h3{
+  font-size: 20px;
+  font-style: bold;
+  color: white;
+  text-shadow: #DA70D6;
+}
